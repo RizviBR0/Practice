@@ -22,7 +22,6 @@ int main()
     }
 
     int j, temp;
-
     for (i = 1; i <= n; i++)
     {
         for (j = 1; j <= n - i; j++)
@@ -34,11 +33,11 @@ int main()
                 a[j + 1] = temp;
             }
         }
-    }
 
-    printf("\nSorted elements : ");
-    for (i = 1; i <= n; i++)
-    {
-        printf("%d ", a[i]);
+        printf("\nSorted elements : ");
+        for (i = 1; i <= n; i++)
+        {
+            printf("%d ", a[i]);
+        }
     }
 }
