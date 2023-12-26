@@ -40,4 +40,6 @@ int main()
             printf("%d ", a[i]);
         }
     }
+
+    printf("Hello world");
 }
