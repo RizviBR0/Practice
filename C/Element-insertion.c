@@ -43,7 +43,7 @@ int main()
     LA[K] = item;
     N++;
 
-    //printing the array  after insertion
+    //printing the array after insertion
     printf("Array after insertion: ");
     for(int i=1;i<=N;i++)
     {
