@@ -28,7 +28,7 @@ void operator-(demo &d)
 
 int main()
 {
-    demo d(10, -20);
+    demo d(-10, -20);
     d.show();
     -d;
     d.show();
