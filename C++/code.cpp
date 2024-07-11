@@ -3,28 +3,17 @@ using namespace std;
 
 int main()
 {
-    char grade;
-    cin >> grade;
-    grade = toupper(grade);
+    int row, col, j, i;
 
-    switch (grade)
-    {
-    case 'A':
-        cout << "Excellent!" << endl;
-        break;
-    case 'B':
-        cout << "Good!" << endl;
-        break;
-    case 'C':
-        cout << "Well done!" << endl;
-        break;
-    case 'D':
-        cout << "You passed!" << endl;
-        break;
-    case 'F':
-        cout << "Better try again!" << endl;
-        break;
-    default:
-        cout << "Invalid grade" << endl;
-    }
+    cout << "Enter the number of rows: ";
+    cin >> row;
+    cout << "Enter the number of columns: ";
+    cin >> col;
+
+    for (i = 1; i <= row; ++i) {
+      for (j = 1; j <= i; ++j) {
+         cout << "* ";
+      }
+      cout << endl;
+   }
 }
