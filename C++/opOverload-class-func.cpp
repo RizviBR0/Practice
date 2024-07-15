@@ -20,12 +20,11 @@ public:
     void operator-()
     {
         a = -a;
-        b= -b;
+        b = -b;
     }
 };
 
-int
-main()
+int main()
 {
     demo d(-10, 20);
     d.show();
