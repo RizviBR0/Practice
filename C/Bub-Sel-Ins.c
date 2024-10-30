@@ -61,7 +61,7 @@ void display(int a[], int n)
     {
         printf("%d ", a[i]);
     }
-    printf("\n");
+    printf("\n\n");
 }
 
 int main()
@@ -77,6 +77,7 @@ int main()
         printf("2. Insertion sort\n");
         printf("3. Selection sort\n");
         printf("4. Exit\n");
+        printf("--------------------\n");
 
         int choice;
         printf("Enter your choice: ");
