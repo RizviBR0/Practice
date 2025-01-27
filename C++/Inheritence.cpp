@@ -9,7 +9,7 @@ protected:
     string surname = "Ambani";
 };
 
-// Inheritence
+// Inheritance
 class son1 : father
 {
     // Access Specifier
@@ -22,7 +22,7 @@ public:
     }
 };
 
-// Inheritence
+// Inheritance
 class son2 : father
 {
     // Access Specifier
