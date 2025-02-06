@@ -108,8 +108,8 @@ void LinkedListDisplay()
 
         while (tt != NULL)
         {
-            printf("\nRoll No: %d", tt->roll);
-            printf("\nName: %s\n", tt->name);
+            printf("Roll No: %d", tt->roll);
+            printf("Name: %s\n", tt->name);
             tt = tt->next;
         }
     }
