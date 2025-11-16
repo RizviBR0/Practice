@@ -1,0 +1,8 @@
+# Compiled binaries
+C++/Subtraction
+*.exe
+*.out
+*.o
+*.a
+*.so
+*.dll
