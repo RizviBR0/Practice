@@ -1,18 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int mutex = 1;
-int full = 0;
-int empty = 5;
-int x = 0;
+int mutex = 1; // what is mutex here? ans-> mutex is a binary semaphore that is used to control access to a shared resource in concurrent programming.
+int full = 0; // full is a counter that keeps track of the number of items in the buffer.
+int empty = 5; // max_size is the maximum size of the buffer.
 
 void producer()
 {
     mutex--;
     full++;
     empty--;
-    x++;
-    printf("\nProducer produces item %d", x);
+    printf("\nProducer produces item %d", full);
     mutex++;
 }
 
@@ -21,19 +19,18 @@ void consumer()
     mutex--;
     full--;
     empty++;
-    printf("\nConsumer consumes item %d", x);
-    x--;
+    printf("\nConsumer consumes item %d", full);
     mutex++;
 }
 
 int main()
 {
-    int n, i;
+    int n;
     printf("\n1. Press 1 for Producer"
            "\n2. Press 2 for Consumer"
            "\n3. Press 3 for Exit");
 
-    for (i = 1; i > 0; i++)
+    while(1)
     {
         printf("\nEnter your choice:");
         scanf("%d", &n);
